@@ -16,64 +16,38 @@
 
 
 
-<div class="container">
-		<div class="row">
-			<div class="col-lg-4 noticias"> 
-		          			<a href="formato_noticias">
-		          			<div class="card">
-		  					<img class="card-img" src="<?php bloginfo('template_url') ?>/assets/images/tendencias/16bits.jpg">
-		  					<h3>La guerra aun no termina</h3>
-		    				<p class="card-text">Faltan meses para ver el resultado de nuestro universo , pero mientras tanto...</p>
-						</div> 
+
+
+<div class="container noticias">
+	<div class="row">
+	<?php
+		$arg = array(
+			'post_type'		 => 'tendencias',
+			'posts_per_page' => 6,
+			'paged'			 => $paged
+		);
+
+		$get_arg = new WP_Query( $arg );
+
+		while ( $get_arg->have_posts() ) {
+			$get_arg->the_post();
+	?>
+		<div class="col-lg-4">
+			<a href="<?php the_permalink() ?>">
+				<div class="noticia">
+					<h3 class="noticia__title"><?php the_title() ?></h3>
+					<?php the_post_thumbnail( 'noticias', array('class' => 'img-thumbnail')) ?>
+					<div class="noticia__detail">
+						<p class="noticia__text"><?php the_excerpt() ?></p>
 					</div>
-				</a>
-				<!-- <div class="col-lg-4 noticias">
-							<a href="#">
-		          			<div class="card">
-		  					<img class="card-img" src="<?php bloginfo('template_url') ?>/assets/images/tendencias/16bits.jpg">
-		  					<h3>Titulo Foto 1</h3>
-		    				<p class="card-text">lorem</p>
-		    				</a>
-					</div> 
 				</div>
-				<div class="col-lg-4 noticias">
-							<a href="#"> 
-		          			<div class="card">
-		  					<img class="card-img" src="<?php bloginfo('template_url') ?>/assets/images/tendencias/16bits.jpg">
-		  					<h3>Titulo Foto 1</h3>
-		    				<p class="card-text">lorem</p>
-		    				</a>
-					</div> 
-				</div>
-				<div class="col-lg-4 noticias">
-							<a href="#"> 
-		          			<div class="card">
-		  					<img class="card-img" src="<?php bloginfo('template_url') ?>/assets/images/tendencias/16bits.jpg">
-		  					<h3>Titulo Foto 1</h3>
-		    				<p class="card-text">lorem</p>
-		    				</a>
-					</div> 
-				</div>
-				<div class="col-lg-4 noticias">
-							<a href="#"> 
-		          			<div class="card">
-		  					<img class="card-img" src="<?php bloginfo('template_url') ?>/assets/images/tendencias/16bits.jpg">
-		  					<h3>Titulo Foto 1</h3>
-		    				<p class="card-text">lorem</p>
-		    				</a>
-					</div> 
-				</div>
-				<div class="col-lg-4 noticias mb-5">
-							<a href="#"> 
-		          			<div class="card">
-		  					<img class="card-img" src="<?php bloginfo('template_url') ?>/assets/images/tendencias/16bits.jpg">
-		  					<h3>Titulo Foto 1</h3>
-		    				<p class="card-text">lorem</p>
-		    				</a>
-					</div> 
-				</div>
- -->
-			</div>
+			</a>
 		</div>
+		<?php } wp_reset_postdata();
+	?>
+	</div>
+</div>
+
+			
 
 <?php get_footer() ?>

@@ -2662,7 +2662,7 @@ body{
 
 .formato__imagen--tamaño{
 
-	width: 80vh;
+	width: 60%;
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
@@ -2889,6 +2889,11 @@ margin-left: calc(100% / 2 - 160px) ;
 
 /*TENDENCIAS.HTML*/
 /*CONTENIDO*/
+
+.card-body{
+  width: 33%;
+  top: 4rem;
+}
 .descripcion{
 	position: absolute;
 	top: 4rem;

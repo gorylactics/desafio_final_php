@@ -12,7 +12,7 @@
 function dl_image_sizes( $sizes ) {
 
 	$add_sizes = array(
-		'slideshow'		=> __( 'Tamaño del slideshow' ),
+		'noticias'		=> __( 'Tamaño de las fotos de noticias' ),
 		'custom_logo'	=> __( 'Tamaño personalizado del logo' )
 	);
 
@@ -32,7 +32,7 @@ function dl_image_sizes( $sizes ) {
  */
 if ( function_exists( 'add_theme_support' ) ) {
 
-	add_image_size( 'slideshow', 800, 600, true );			// Personalización del tamaño del slideshow
+	add_image_size( 'noticias', 200, 200, true );			// Personalización del tamaño del slideshow
 	add_image_size( 'custom_logo', 800, 600, true );		// Personalización del tamaño del logo
 
 	add_filter( 'image_size_names_choose', 'dl_image_sizes' );
