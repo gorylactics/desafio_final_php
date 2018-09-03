@@ -1,27 +1,22 @@
 <?php get_header() ?>
 
+<!-- SECCION E INTRODUCCION -->
 <div class="container">
 	<div class="row">
-		<div class="seccionm">
+		<div class="seccion">
 			<div class="seccion__titulo col-lg-12">
 				<h2 class="seccion__titulo--fuente">YO
 				</h2>
 			</div>
 				<div class="seccion__intro col-lg-6">
-					<p class="seccion__intro--parrafo">Buenas: <br> <span> AD </span> es un ser que aterriza en tu browser para poder entregar todo lo que tiene a su disposicion. <br> La ilustracion, el diseño, la fotografia y el webdesing no se guarda. Se crea y se trasmite, en eso creemos. Y es por eso que compartimos conocimiento para que en adelante los proyectos que dejes en ADresponsibility sean de la mayor calidad. <br> EL poseer tecnicas y conocimiento en este mundo no lo es todo, tambien esta la inspiracion en todo lo que nos rodea y saber como manipularla es tarea diaria para que TU contenido llegue a todos aquellos a quienes quieres cautivar. <br> Eso es ADmira un lugar donde crear y creer. 
-
-
+					<p class="seccion__intro--parrafo">Buenas: <br> <span> AD </span> es un ser que aterriza en tu browser para poder entregar todo lo que tiene a su disposicion. <br> La ilustracion, el diseño, la fotografia y el webdesing no se guarda. Se crea y se trasmite. En eso creemos, y es por eso que compartimos conocimiento para que en adelante los proyectos que dejes bajo la ADresponsibility sea de la mayor calidad. <br> Las tecnicas y la inspiracion  en este mundo no lo es todo, tambien esta el conocimiento y el manejo de herramientas como las que puedes ver aqui para crear realidades de manera tal que TU contenido llegue a todos aquellos a quienes quieres cautivar. <br> Eso es ADmira un lugar donde crear y creer. 
 				</div>
 			</div>
 		</div>
 	</div>
+<!-- SECCION E INTRODUCCION -->
 
-	<div class="container">
-		<div class="row">
-			<h2 class="llamado">Dominamos las herramientas para crear la publicidad que tanto necesitas ;)</h2>
-		</div>
-	</div>
-
+<!-- HABILIDADES -->
 	<div class="container">
 		<div class="row">
 			<div class="habilidades">
@@ -37,8 +32,10 @@
 			</div>
 		</div>
 	</div>
+<!-- /HABILIDADES -->
 
 
+<!-- IMAGEN DE FONDO -->
 	<div class="container__fluid">
 		<div class="row">
 			<div class="perfil col-lg-12">
@@ -46,4 +43,6 @@
 			</div>
 		</div>
 	</div>
+<!-- /IMAGEN DE FONDO -->
+
 <?php get_footer() ?>

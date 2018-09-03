@@ -13,7 +13,7 @@
 </div>
 
 
-<div class="container col-lg-12">
+<div class="container col-lg-12 galeria">
 	<div class="row">
 		<div class="card__imagen1 "> 
 			<div class="card vertical">
