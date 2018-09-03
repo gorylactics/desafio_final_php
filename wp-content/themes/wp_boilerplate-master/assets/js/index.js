@@ -3,7 +3,7 @@ $(document).ready(function(){
 	// alert('hola');
 
 	// setTimeout(function(){
-	// 	var url = "inicio.html"; 
+	// 	var url = "inicio"; 
 	// 	$(location).attr('href',url);
 	// }, 3000);
 	

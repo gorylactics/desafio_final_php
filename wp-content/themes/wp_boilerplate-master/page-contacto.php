@@ -21,7 +21,7 @@
 <div class="logo col-lg-12">
   <a href="page-inicio.php">
     <img src="<?php bloginfo('template_url') ?>/assets/images/inicio/logo2.svg" alt="">
-    <p class="volver">volver</p></a>
+  </a>
 </div>
 
 <?php get_footer() ?>

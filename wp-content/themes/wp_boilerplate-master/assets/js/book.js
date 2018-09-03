@@ -1,11 +1,18 @@
 $(document).ready(function(){
 	// alert('pagina book')
 
-	$('.card-img').click(function(evt){
+	$('.horizontal').click(function(evt){
 		evt.preventDefault();
 		evt.stopPropagation();
 
-		$(this).toggleClass('book__click');
+		$(this).toggleClass('book__click--1');
+	});
+
+	$('.vertical').click(function(evt){
+		evt.preventDefault();
+		evt.stopPropagation();
+
+		$(this).toggleClass('book__click--2');
 	});
 
 });

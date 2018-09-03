@@ -16,10 +16,6 @@
 			<div class="formato__noticia">
 				<?php the_content() ?>
 			</div>
-			<div class="volver"><a href="tendencias.html">
-				<p>volver</p>
-			</a>
-		</div>
 		</div>
 	</div>
 </div>

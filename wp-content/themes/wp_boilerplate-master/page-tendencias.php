@@ -32,9 +32,9 @@
 		while ( $get_arg->have_posts() ) {
 			$get_arg->the_post();
 	?>
-		<div class="col-lg-4">
+		<div class="noticia col-lg-4">
 			<a href="<?php the_permalink() ?>">
-				<div class="noticia">
+				<div class="noticia__elementos">
 					<h3 class="noticia__title"><?php the_title() ?></h3>
 					<?php the_post_thumbnail( 'noticias', array('class' => 'img-thumbnail')) ?>
 					<div class="noticia__detail">

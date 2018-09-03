@@ -14,6 +14,7 @@
 			<div class="navbar">
 				<div class="navbar__logo ">
 					<a href="inicio">
+						<img id="logoanimado" src="<?php bloginfo('template_url') ?>/assets/images/navbar/personaje.svg" alt="">
 						<img class="navbar__logo--tamaño" src="<?php bloginfo('template_url') ?>/assets/images/inicio/logo2.png" alt="admira">
 					</a>
 				</div>
